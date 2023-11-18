@@ -48,4 +48,6 @@ const App=()=>{
     );
   }
 
+  //comments so I can commit. I am having a very hard time focusing right now, so i spent time looking at this code But I am spent!
+
 export default App;
