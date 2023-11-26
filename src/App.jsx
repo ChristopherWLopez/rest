@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Form from './Components/Form';
 import Results from './Components/Results';
+import OpenAI from 'openai';
 
 const App=()=>{
 
@@ -41,8 +42,10 @@ const App=()=>{
         <Header />
         <div>Request Method: {requestParams.method}</div>
         <div>URL: {requestParams.url}</div>
+        {console.log(requestParams)}
         <Form handleApiCall={callApi} />
         <Results data={data} />
+        <OpenAI/>
         <Footer />
       </React.Fragment>
     );
